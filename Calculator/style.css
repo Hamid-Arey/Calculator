@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Calculator;
+    src: url(Calculator.ttf);
+  }
+  @font-face {
+    font-family: Solid;
+    src: url(Solid.ttf)
+  }
+  @font-face {
+    font-family: Hollow;
+    src: url(Hollow.ttf)
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  .logo {
+    color: white;
+    font-size: 20px;
+    font-family: Hollow;
+  }
+  .Calculator {
+    width: 450px;
+    height: 750px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+  }
+  .screencontainer {
+    width: 97.5%;
+    height: 150px;
+    background-color: #1A1A1A
+  }
+  #screen {
+    width: 90%;
+    height: 120px;
+    background-color: #3E3E3E;
+    font-family: Calculator;
+    font-size: 60px;
+    color: white;
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .in, .outB, .outR {
+    width: 17%;
+    height: 105px;
+    font-family: Calculator;
+    font-size: 35px;
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 15%;
+    position: relative; top: 37.5px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0px;
+    padding: 1px;
+  }
+  .outB:hover {
+    background-color: #2A92FF;
+    color: white;
+  }
+  .outR:hover {
+    background-color: #2A92FF;
+    color: white;
+  }
+  .in:hover {
+    background-color: #2A92FF;
+  }
+  .outB {
+    color: #2A92FF;
+  }
+  .in {
+    color: white;
+  }
+  .outR {
+    color: red;
+  }
+  #SqrR, #Inverse, #invSin, #invCos, #invTan, #Pi {
+    display: none;
+  }

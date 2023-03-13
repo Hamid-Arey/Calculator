@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <div class="Calculator">
+      <form>
+
+        <!--logo-->
+        <div class="logo">Hamid's Calculator</div>
+
+        <!--screen-->
+        <input type="text" id="screen" dir="rtl" READONLY /><br>
+
+        <!--first row-->
+        <input type="reset" id="clear" value="C" class="outB">
+        <input type="button" id="inverse" onclick="change()" value="2ndF" class="outB">
+        <input type="button" id="Inverse" onclick="Bchange()" value="1stF" class="outB">
+        <input type="button" id="Percent" onclick="percent()" value="%" class="outB">
+        <input type="button" id="Pi" onclick="addNum(Math.PI)" value="π" class="outB">
+        <input type="button" id="Sqr" onclick="setSign('X^Y')" value="X^Y" class="outB">
+        <input type="button" id="SqrR" onclick="squardR()" value="√" class="outB">
+        <input type="button" id="sign" onclick="setSign('÷')" value="÷" class="outB">
+        <br>
+
+        <!--second row-->
+        <input type="button" id="Sin" onclick="sin()" value="sin" class="outR">
+        <input type="button" id="invSin" onclick="asin()" value="sin-1" class="outR">
+        <input type="button" id="num" onclick="addNum(7)" value="7" class="in">
+        <input type="button" id="num" onclick="addNum(8)" value="8" class="in">
+        <input type="button" id="num" onclick="addNum(9)" value="9" class="in">
+        <input type="button" id="sign" onclick="setSign('×')" value="×" class="outB">
+        <br>
+
+        <!--third row-->
+        <input type="button" id="Cos" onclick="cos()" value="cos" class="outR">
+        <input type="button" id="invCos" onclick="acos()" value="cos-1" class="outR">
+        <input type="button" id="num" onclick="addNum(4)" value="4" class="in">
+        <input type="button" id="num" onclick="addNum(5)" value="5" class="in">
+        <input type="button" id="num" onclick="addNum(6)" value="6" class="in">
+        <input type="button" id="sign" onclick="setSign('-')" value="−" class="outB">
+        <br>
+
+        <!--fourth row-->
+        <input type="button" id="Tan" onclick="tan()" value="tan" class="outR">
+        <input type="button" id="invTan" onclick="atan()" value="tan-1" class="outR">
+        <input type="button" id="num" onclick="addNum(1)" value="1" class="in">
+        <input type="button" id="num" onclick="addNum(2)" value="2" class="in">
+        <input type="button" id="num" onclick="addNum(3)" value="3" class="in">
+        <input type="button" id="sign" onclick="setSign('+')" value="+" class="outB">
+        <br>
+
+        <!--bottom row-->
+        <input type="button" id="Log" onclick="log()" value="log" class="outR">
+        <input type="button" id="num" onclick="addNum(0)" value="0" class="in">
+        <input type="button" id="num" onclick="addNum('.')" value="•" class="in">
+        <input type="button" id="num" onclick="negNum()" value="+/-" class="in">
+        <input type="button" value="=" onclick="equalPressed()" class="outB">
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </center>
+</body>
+
+</html>
